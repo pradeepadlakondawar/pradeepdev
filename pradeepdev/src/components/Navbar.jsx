@@ -1,30 +1,43 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
-import { BrowserRouter as Router } from 'react-router-dom';
+
+
 function Navbar() {
+  const pageUp = () => {
+    window.scrollTo({ top: (0, 0), behavior: "smooth" });
+  };
+  const navlinks = [
+    {
+      name: "Home",
+      link: "#home",
+    },
+    {
+      name: "About",
+      link: "#about",
+    },
+    {
+      name: "Projects",
+      link: "#projects",
+    },
+    {
+      name: "Contact",
+      link: "#contact",
+    },
+  ];
   return (
-    <Router>
-        <nav className='flex justify-between px-20 py-7 w-full font-bold fixed border-solid border-y-2 bg-white text-xl'>
-          <div className="logo" >
-          <Link to="/">Pradeep.dev</Link>
-          </div>
+    <>
+        <nav className='flex justify-between px-20 py-7 w-full font-bold fixed border-solid border-y-2 bg-white text-xl z-50 text-black'>
+          <h3 className='logo' onClick={pageUp}>Pradeep.dev</h3>
     <ul className='flex justify-between gap-x-10 '>
-        <li>
-            <Link to="/">Home</Link>
-        </li>
-        <li>
-        <Link to="/about">About</Link>
-        </li>
-        <li>
-        <Link to="/projects">Projects</Link>
-        </li>
-        <li>
-        <Link to="/contact">Contact</Link>
-        </li>
+        {navlinks.map((item) => (
+            <li key={item.name} className='hover:text-sky-700'>
+              <a href={item.link}>{item.name}</a>
+            </li>
+          ))}
     </ul>
    </nav>
    <div className='border-solid border-2 fixed'></div>
-    </Router>
+   </>
+    
    
   )
 }
