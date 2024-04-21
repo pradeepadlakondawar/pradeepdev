@@ -5,13 +5,13 @@ import frontendlogo from "../assets/forntendevlogo.svg"
 import "./Fonts.css"
 function AboutMe() {
   return (
-    <div id='about' className='AboutMe-Container  w-full h-screen  flex '>
-      <div className='Aboutme-Imgs   w-6/12 h-6/12   pl-40 pr-20 pt-40 '>
+    <div id='about' className='AboutMe-Container w-screen min-h-screen flex flex-col md:flex-row items-center'>
+      <div className='Aboutme-Imgs w-full md:w-1/2 px-2 md:px-4 pt-6 md:pt-0'>
          <div className='relative '>
             <img src={aboutmeImg} alt="aboutme main img " className=' rounded-2xl'/>
-            <div className='absolute w-44 h-44 bg-white rounded-full -right-16 -bottom-10  '>
+            <div className='absolute w-44 h-44  bg-white rounded-full -right-16 -bottom-10'>
                 <img src={frontendlogo} alt=""  className='animate-spin'/>
-                <div className='absolute  w-16 h-16  top-14 left-14'>
+                <div className='absolute w-16 h-16 top-14 left-14'>
                 <img src={aboutmeImg2} alt="" />
             </div>
             </div>
@@ -19,14 +19,13 @@ function AboutMe() {
          </div>
       </div>
 
-      <div className='Aboutme-Text w-2/4    '>
-         <div className=' mt-48 ml-10 pr-40 text-left '>
-         <h3 className='font-bold text-xl 
-          text-sky-400 mb-3 '>ABOUT ME</h3>
-         <h4 className='text-3xl leading-snug font-bold mb-5'>Front-end Developer <br />
+      <div className='Aboutme-Text w-full md:w-1/2 px-4 md:px-8 py-8 md:py-0'>
+         <div className='mt-8 md:mt-0 text-left '>
+         <h3 className='font-bold text-xl text-sky-400 mb-3'>ABOUT ME</h3>
+         <h4 className='text-3xl md:text-4xl leading-snug font-bold mb-5'>Front-end Developer <br />
             based in Pune, India 📍
          </h4>
-         <p className='leading-normal text-lg font-medium '>
+         <p className='leading-normal text-base md:text-lg font-medium '>
          Hey, my name is Pradeep, and I'm a Frontend Developer. My passion is to create and develop a clean UI/UX for my users.
          <br />
          <br />
