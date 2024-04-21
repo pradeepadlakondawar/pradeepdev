@@ -8,7 +8,7 @@ function Landingpage() {
         
 
     <>
-    <div className='Landingpage  w-full h-screen text-wrap justify-evenly px-36 py-20 bg-gray-100'>
+    <div id='home' className='Landingpage  w-full h-screen text-wrap justify-evenly px-36 py-20 bg-gray-100'>
       <div className='flex '>
       <div className="Hero-Content w-3/5 px-20">
         <h1 className=' block mt-20 text-5xl font-extrabold'>

@@ -5,7 +5,7 @@ import frontendlogo from "../assets/forntendevlogo.svg"
 import "./Fonts.css"
 function AboutMe() {
   return (
-    <div className='AboutMe-Container  w-full h-screen  flex '>
+    <div id='about' className='AboutMe-Container  w-full h-screen  flex '>
       <div className='Aboutme-Imgs   w-6/12 h-6/12   pl-40 pr-20 pt-40 '>
          <div className='relative '>
             <img src={aboutmeImg} alt="aboutme main img " className=' rounded-2xl'/>

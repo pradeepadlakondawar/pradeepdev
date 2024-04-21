@@ -9,7 +9,7 @@ function Contact() {
     
 
   return (
-    <div className='px-44 py-20 w-full'>
+    <div id='contact' className='px-44 py-20 w-full'>
       <h3 className='font-bold text-xl 
           text-sky-400 mb-3'>Contact</h3>
       <h4 className='text-3xl leading-snug font-bold mb-5'>Don't be shy! Hit me up! 👇</h4>
