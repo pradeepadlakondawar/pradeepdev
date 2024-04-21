@@ -18,7 +18,7 @@ function App() {
   
   return (
     <>
-      <div className="w-full h-screen  ">
+      <div className="w-screen h-screen  ">
         <Router>
         <Navbar />
       <Landingpage />
