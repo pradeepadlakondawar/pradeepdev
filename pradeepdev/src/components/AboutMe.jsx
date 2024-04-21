@@ -19,7 +19,7 @@ function AboutMe() {
          </div>
       </div>
 
-      <div className='Aboutme-Text w-full md:w-1/2 px-4 md:px-8 py-8 md:py-0'>
+      <div className='Aboutme-Text w-full md:w-1/2 px-4 md:px-14 py-8 md:py-0 lg:px-20'>
          <div className='mt-8 md:mt-0 text-left '>
          <h3 className='font-bold text-xl text-sky-400 mb-3'>ABOUT ME</h3>
          <h4 className='text-3xl md:text-4xl leading-snug font-bold mb-5'>Front-end Developer <br />

@@ -12,7 +12,7 @@ function Landingpage() {
     <>
     <div id='home' className='Landingpage w-full min-h-screen text-center justify-center px-4 py-8  sm:py-12 lg:py-16 bg-gray-100'>
       <div className='flex flex-col sm:flex-row justify-center items-centerlex '>
-      <div className="Hero-Content w-full sm:w-2/3 lg:w-3/5 px-4 sm:px-0 sm:mr-8 lg:mr-12">
+      <div className="Hero-Content w-full sm:w-2/3 lg:w-3/4 px-4 sm:px-0 sm:mr-8 lg:mr-12">
         <h1 className=' block mt-8 sm:mt-12 lg:mt-16 text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight'>
         Front-End React Developer <span className='inline-block'><img className="object-cover inline-block w-10 sm:w-12 lg:w-14" src={wavingImg} alt="WavingImg" /></span>
         </h1>
